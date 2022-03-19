@@ -1,2 +1,2 @@
 # sample
-samples of what i can do 
+income/expenditure app with pure html, css and javascript
