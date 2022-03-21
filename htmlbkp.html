@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div id="brand"><a href="http://">Budget</a></div>
+        <nav>
+            <span class="menu-item"><a href="#">Home</a></span>
+            <span class="menu-item"><a href="#income">Income</a></span>
+            <span class="menu-item"><a href="#expense">Expenditure</a></span>
+        </nav>
+    </header>
+    <main>
+        <noscript>Javascipt needs to be turned on for maximum functionality</noscript>
+        <h2>Income/Expense Tracker</h2>
+        <div id="income">
+            <div>
+                <div>
+                    <h4>Record of all your income</h4>
+                    <article class="_20mb">
+                        <header>
+                            <span>Overhead</span> <span>Description</span>
+                            <span>Amount</span> <span>Dated</span>
+                        </header>
+                        <section id="incomsectn">
+                            <div>
+                                there is no revenue or income at the moment
+                            </div>
+                        </section>
+                    </article>
+                    
+                </div>
+                <div class="add">
+                    <div class="_20mt">By registering your income you can keep track of your Income
+                        through the form below
+                    </div>
+                    <div class="note">Note: field names with asteris(*) are required</div>
+                    <form name="inc" action="" method="post">
+                        <div>
+                            <div>
+                                <label for="ovahd">Over head*</label>
+                            </div>
+                            <input type="text" name="ovahd" id="ovahd" required="required" placeholder="what is fetching you the money">
+                        </div>
+                        <div>
+                            <div>
+                                <label for="amt">Amount*</label>
+                            </div>
+                            <div>
+                                <select name="cur" id="cur">
+                                    <option value="">#</option>
+                                    <option value="$">$</option>
+                                    <option value=""></option>
+                                </select>
+                                <input type="number" name="amt" id="amt" minlength="1" maxlength="20" required="required">    
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="Idsc">Description</label>
+                            </div>
+                            <textarea name="desc" id="Idsc" class="form-control" rows="3" placeholder="Enter discription of income" required="required"></textarea>
+                        </div>
+                        <button type="submit">Add Income</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="expense">
+            <div>
+                <div>
+                    <h4>Record of all your Expenses</h4>
+                    <article class="_20mb">
+                        <header>
+                            <span>Overhead</span> <span>Description</span>
+                            <span>Amount</span> <span>Dated</span>
+                        </header>
+                        <section id="expensectn">
+                            <div>
+                                there is no revenue or income at the moment
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <div class="add">
+                    <div class="_20mt">By registering your expense you can keep track of your Expenses 
+                        through the form below
+                    </div>
+                    <div class="note">Note: field names with asteris(*) are required</div>
+                    <form name="exp" action="" method="post">
+                        <div>
+                            <div>
+                                <label for="ovahd">Over head</label>
+                            </div>
+                            <input type="text" name="ovahd" id="ovahd" required="required" minlength="2" maxlength="50">
+                        </div>
+                        <div>
+                            <div>
+                                <label for="amt">Amount</label>
+                            </div>
+                            <div>
+                                <select name="cur" id="cur">
+                                    <option value="">#</option>
+                                    <option value="$">$</option>
+                                    <option value=""></option>
+                                </select>
+                                <input type="number" name="amt" id="amt" minlength="1" maxlength="20" required="required" placeholder="what do you want to spend the money on">    
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="Bdesc">Description</label>
+                            </div>
+                            <textarea name="" id="Bdesc" class="form-control" rows="3" placeholder="Enter discription of expense"></textarea>
+                        </div>
+                        <button type="submit">Add Expense</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="gen.js"></script>
+</html>
