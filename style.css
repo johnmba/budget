@@ -33,7 +33,6 @@ h4{
 #brand{
     position: relative;
     line-height: 0.5rem;
-    letter-spacing: 0.2rem;
     text-transform: uppercase;
     font-size: 40px;
 }
@@ -129,6 +128,43 @@ article > header, .buget-row{
 #expense a{
     color: #04AA6D;
 }
+.buget-row{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
 .item{
     padding: 5px 10px;
+}
+.unit{
+    padding: 5px;
+    text-align: left;
+}
+._2fb, ._1fb{
+    flex-basis: 100px;
+}
+._1fb{
+    flex-grow: 1;
+}
+._2fb{
+    flex-grow: 2;
+}
+.flxc{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.total{
+    border-top: #04AA6D 5px dotted;
+}
+footer{
+    width: 100vw;
+    position:fixed;
+    bottom: 5px;
+    left: 5px;
+    z-index: 1000;
+}
+marquee a{
+    color: #04AA6D;
 }
