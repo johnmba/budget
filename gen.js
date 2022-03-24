@@ -115,7 +115,7 @@ form.inc.addEventListener("submit", (e)=>{
     };
 
     newrev.innerHTML = temp(obj=incom);
-    income[0].appendChild(newrev);
+    income[0].insertBefore(newrev, income[0].firstChild);
     totrev.innerHTML = total(localStorage.total_rev, incom.dated);
     income[0].appendChild(totrev);
 
@@ -164,7 +164,7 @@ form.exp.addEventListener("submit", (e)=>{
     };
 
     newexp.innerHTML = temp(obj=expens);
-    expense[0].appendChild(newexp);
+    expense[0].insertBefore(newexp, expense[0].firstChild);
     totexp.innerHTML = total(localStorage.total_exp, expens.dated);
     expense[0].appendChild(totexp);
     window.location.href = "#expensectn";
