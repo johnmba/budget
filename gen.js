@@ -121,7 +121,7 @@ form.inc.addEventListener("submit", (e)=>{
 
     let noexp = document.querySelector("#expensectn .nobuge");
     if (noexp && typeof localStorage.exp == "undefined"){
-        noexp.innerHTML = "You have $" + localStorage.total_rev + " in draft for you to spend, note you cannot spend more than."
+        noexp.innerHTML = "There is $" + localStorage.total_rev + " in draft for you to spend, note you cannot spend more than you have as income."
     };
     form.exp.expensa.disabled = false;
     window.location.href = "#incomsectn";
